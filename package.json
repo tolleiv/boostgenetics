@@ -10,6 +10,7 @@
         "libxmljs":">= 0.x.x",
         "http":">= 0.x.x",
         "express":"3.0.3",
-        "jade":"*"
+        "jade":"*",
+        "socket.io":"*"
     }
 }
