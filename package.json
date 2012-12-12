@@ -1,0 +1,15 @@
+{
+    "name":"rfc-index",
+    "version":"0.0.1",
+    "private":true,
+    "scripts": {
+      "start": "node app"
+    },
+    "dependencies":{
+        "solr":">= 0.0.1",
+        "libxmljs":">= 0.x.x",
+        "http":">= 0.x.x",
+        "express":"3.0.3",
+        "jade":"*"
+    }
+}

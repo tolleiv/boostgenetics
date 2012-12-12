@@ -1,0 +1,50 @@
+extends layout
+
+block content
+   div.container-narrow
+      section(id="settings")
+          form
+            fieldset
+              legend Settings
+              div
+                input(name="host", type="text", placeholder="Host", value="localhost").input-small
+                &nbsp;
+                input(name="port", type="text", placeholder="Port", value="8080").input-small
+              div
+                input(name="path", type="text", placeholder="Path", value="/solr/rfcs/select?defType=dismax&rows=50&fl=id&q=").input-xxlarge
+              div
+                input(name="fields", type="text", placeholder="Fields", value="&qf=title^__0__%20keywords^__1__%20abstract^__2__%20sec1^__3__%20text^__4__%20titles^__5__%20references^__6__%20author^__7__").input-xxlarge
+              div
+                input(name="iterations", type="text", placeholder="Iterations", value="100").input-small
+                &nbsp;
+                input(name="domain", type="text", placeholder="Domain", value="").input-xlarge
+            fieldset.terms
+              legend Test queries&nbsp;
+                a(id="addterm").btn.btn-small
+                  i.icon-plus
+                  | Add
+              div.term.controls
+                input(name="search", type="text", placeholder="Search").span4
+                &nbsp;
+                input(name="doc", type="text", placeholder="Document ID").input-small
+                &nbsp;
+                input(name="pos", type="text", placeholder="Position").input-small
+      hr
+      div.container.row
+          div.container.fitness.span6
+            fieldset
+               legend Single vector fitness&nbsp;
+                 a(id="fitness").btn.btn-small
+                   i.icon-chevron-right
+                   | Calculate
+               div
+                 input(name="vector", type="text", placeholder="Vector", value="").input-large
+               div.console
+          div.container.training.span6
+            fieldset
+               legend Genetic optimization&nbsp;
+                 a(id="train").btn.btn-small
+                   i.icon-chevron-right
+                   | Train
+               div.console
+
