@@ -21,5 +21,15 @@ Field usage
 * __Domain__: The allowed value range for the factors - must match to the amount of placeholders in your fields string (e.g. [[1,100],[1,100],[1,100],[1,100],[1,100],[1,100],[1,100],[1,100]])
 
 
+Licence:
+----------------------------
+
+
+
+Credits:
+----------------------------
+
+
+
 [NodeJS]: http://nodejs.org/download/
 [the application]: http://localhost:3000

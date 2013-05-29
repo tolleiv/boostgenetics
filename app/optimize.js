@@ -37,7 +37,7 @@ var cp = function(v) {
     return n;
 }
 
-exports.optimize = function(domain, costf, emit, popsize, step, mutprod, elite, maxiter) {
+exports.genOptimize = function(domain, costf, emit, popsize, step, mutprod, elite, maxiter) {
 
     var mutate = function(vec) {
         var i = randInt(0, domain.length-1);

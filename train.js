@@ -1,6 +1,6 @@
 
 var fetch = require('./app/fetch').fetch
-var optimize = require('./app/optimize').optimize
+var optimize = require('./app/optimize')
 var extract = require('./app/extract')
 var Process = require('./app/process').process
 
@@ -51,7 +51,8 @@ var costFunction = function(options) {
 
 
 exports.train = function(options, emit) {
-    optimize(options.domain, costFunction(options), emit, 20, 50, 0.3, 0.2, parseInt(options.iterations));
+    var type = !options.type ? 'gen' : options.type;
+    optimize[type+'Optimize'].call(this, options.domain, costFunction(options), emit, 20, 50, 0.3, 0.2, parseInt(options.iterations));
 };
 exports.test = function(options, emit) {
     var costf = costFunction(options);
