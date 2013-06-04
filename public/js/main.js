@@ -65,7 +65,7 @@ $(document).ready(function () {
     });
     socket.on('vector', function (message) {
         running=!message.done;
-        $(currentConsole).append($((message.done?"<div class='done'>":"<div>")).html(JSON.stringify(message.v) + " : " + message.c + " => √" + Math.round(1000*Math.sqrt(message.c))/1000));
+        $(currentConsole).append($((message.done?"<div class='done'>":"<div>")).html(JSON.stringify(message.v) + " : " + Math.round(100*message.c)/100 + " => √" + Math.round(100*Math.sqrt(message.c))/100));
     });
 
 })

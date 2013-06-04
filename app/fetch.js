@@ -7,6 +7,7 @@ exports.fetch = function (rfc, callback, next, obj) {
         port:80,
         path:'/public/rfc/xml/rfc%no%.xml'.replace(/%no%/, rfc)
     };
+//    console.info(o.path);
     var req = http.get(o, function (response) {
 
         response.setEncoding('utf8');

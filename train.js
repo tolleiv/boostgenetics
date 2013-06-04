@@ -34,6 +34,7 @@ var costFunction = function(options) {
         var repeater = function(i, sum) {
             if (i >= options.data.length) {
                 cache[cacheKey]=sum/options.data.length;
+                console.info("C:" + c);
                 emit({v:v, c:cache[cacheKey]});
                 return;
             };
@@ -49,7 +50,7 @@ var costFunction = function(options) {
     return costf;
 };
 
-
+/* popsize, step, mutprod, elite, maxiter */
 exports.train = function(options, emit) {
     var type = !options.type ? 'gen' : options.type;
     optimize[type+'Optimize'].call(this, options.domain, costFunction(options), emit, 20, 50, 0.3, 0.2, parseInt(options.iterations));
