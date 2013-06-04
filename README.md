@@ -24,12 +24,7 @@ Field usage
 Licence:
 ----------------------------
 
-
-
-Credits:
-----------------------------
-
-
+Apache License, Version 2.0 (see LICENSE)
 
 [NodeJS]: http://nodejs.org/download/
 [the application]: http://localhost:3000
