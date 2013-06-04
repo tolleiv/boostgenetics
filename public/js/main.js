@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var socket = io.connect('http://localhost');
+    var socket = io.connect(document.location.origin);
 
     $("#addterm").click(function () {
         $(".terms").append($("<div class=\"term controls\">").append($(".terms .term:first").html()))
@@ -58,7 +58,7 @@ $(document).ready(function () {
 
     $("#train").click(function () {
         socket.emit('train', runner('.training .console'));
-    });
+        });
     $("#fitness").click(function() {
         var o = runner('.fitness .console');
         socket.emit('test', runner('.fitness .console'));
