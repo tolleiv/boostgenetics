@@ -1,6 +1,8 @@
 Boost Genetics
 ==============
 
+This implements a proof of concept genetic optimization for Apache Solr boost factor optimization problems. A rough outline for that can be found [the related blog post].
+
 Running the application
 ----------------------------
 
@@ -27,4 +29,5 @@ Licence:
 Apache License, Version 2.0 (see LICENSE)
 
 [NodeJS]: http://nodejs.org/download/
+[the related blog post]: http://blog.tolleiv.de/2013/06/genetic-algorithms-boosting-solr/
 [the application]: http://localhost:3000
