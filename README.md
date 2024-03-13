@@ -29,5 +29,5 @@ Licence:
 Apache License, Version 2.0 (see LICENSE)
 
 [NodeJS]: http://nodejs.org/download/
-[the related blog post]: http://blog.tolleiv.de/2013/06/genetic-algorithms-boosting-solr/
+[the related blog post]: https://blog.tolleiv.de/2013/06/using-genetic-algorithms-to-optimize-apache-solr-boost-factors.
 [the application]: http://localhost:3000
